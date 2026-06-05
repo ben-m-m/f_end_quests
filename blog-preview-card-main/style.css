@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body {
+      font-family: 'Outfit','Inter', sans-serif;
+      background-color: #d5b525;
+      margin: 0;
+    }
+
+    main{
+      color: hsl(228, 10%, 10%);
+      /* padding: 2rem; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 10px;
+      box-shadow: 16px 16px 16px hsla(222, 100%, 3%, 1);
+      padding: 1.5rem;
+      max-width: 350px;
+      margin: auto;
+    }
+
+    .button {
+      background-color: #d5b525;
+      color: hsl(0, 0%, 0%);
+      font-weight: 700;
+      border: none;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      cursor: pointer;
+    }
+
+    .backbone {
+      color: hsl(220, 9%, 48%);
+      font-size: 0.9375rem;
+      line-height: 1.5;
+    }
+
+    .coach {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .coach-name {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      line-height: 1.5;
+    }
