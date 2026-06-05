@@ -1,88 +1,55 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
-/* =========================
-   DESIGN SYSTEM (VARIABLES)
-========================= */
-:root {
-  --primary-color: #d5b525;
-
-  --text-dark: hsl(228, 10%, 10%);
-  --text-muted: hsl(220, 9%, 48%);
-  --white: hsl(0, 0%, 100%);
-
-  --radius-sm: 5px;
-  --radius-md: 10px;
-}
-
-/* =========================
-   BASE STYLES
-========================= */
 body {
-  font-family: 'Outfit', sans-serif;
-  background-color: var(--primary-color);
-  margin: 0;
-}
+      font-family: 'Outfit','Inter', sans-serif;
+      background-color: #d5b525;
+      margin: 0;
+    }
 
-/* =========================
-   LAYOUT
-========================= */
-main {
-  color: var(--text-dark);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: clamp(1rem, 4vw, 2rem);
-}
+    main{
+      color: hsl(228, 10%, 10%);
+      /* padding: 2rem; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-/* =========================
-   CARD
-========================= */
-.card {
-  background-color: var(--white);
-  border-radius: var(--radius-md);
-  box-shadow: 0 1rem 2rem hsla(222, 100%, 3%, 0.2);
-  padding: clamp(1rem, 2vw, 2rem);
-  max-width: clamp(16rem, 80%, 22rem);
-}
+    .card {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 10px;
+      box-shadow: 16px 16px 16px hsla(222, 100%, 3%, 1);
+      padding: clamp(1rem, 2vw, 2rem);
+      max-width: clamp(16rem, 80%, 22rem);
+      margin: auto;
+    }
 
-/* =========================
-   BUTTON
-========================= */
-.button {
-  background-color: var(--primary-color);
-  color: black;
-  font-weight: 700;
-  border: none;
-  border-radius: var(--radius-sm);
-  padding: clamp(0.5rem, 2vw, 1rem);
-  font-size: 0.875rem;
-  cursor: pointer;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
+    .button {
+      background-color: #d5b525;
+      color: hsl(0, 0%, 0%);
+      font-weight: 700;
+      border: none;
+      border-radius: 5px;
+      padding: clamp(0.5rem, 2vw, 1rem);
+      font-size: 0.875rem;
+      cursor: pointer;
+    }
 
-.button:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
-}
+    .backbone {
+      color: hsl(220, 9%, 48%);
+      font-size: 0.9375rem;
+      line-height: 1.5;
+    }
 
-/* =========================
-   TEXT STYLES
-========================= */
-.backbone {
-  color: var(--text-muted);
-  font-size: 0.9375rem;
-  line-height: 1.5;
-}
+    .coach {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
 
-.coach {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.coach-name {
-  font-size: 0.9375rem;
-  font-weight: 700;
-  line-height: 1.5;
-}
+    .coach-name {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      line-height: 1.5;
+    }
